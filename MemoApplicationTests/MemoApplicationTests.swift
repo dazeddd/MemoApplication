@@ -2,12 +2,12 @@
 //  MemoApplicationTests.swift
 //  MemoApplicationTests
 //
-//  Created by 이준수 on 2020/02/12.
+//  Created by 이준수 on 2020/02/13.
 //  Copyright © 2020 이준수. All rights reserved.
 //
 
 import XCTest
-@testable import MemoApplication
+//@testable import MemoApplication
 
 class MemoApplicationTests: XCTestCase {
 
@@ -26,7 +26,7 @@ class MemoApplicationTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
