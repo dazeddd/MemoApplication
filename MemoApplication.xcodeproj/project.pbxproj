@@ -17,11 +17,14 @@
 		FF1654BD23F3BBD70004D919 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1654BC23F3BBD70004D919 /* CustomTableViewCell.swift */; };
 		FF1654BF23F3C1400004D919 /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1654BE23F3C1400004D919 /* MemoDetailViewController.swift */; };
 		FF1654C123F3C1D90004D919 /* MemoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1654C023F3C1D90004D919 /* MemoEditViewController.swift */; };
-		FF1654C323F3C3A30004D919 /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1654C223F3C3A30004D919 /* ImageCollectionView.swift */; };
 		FF1654C723F4F6610004D919 /* MemoApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF1654C523F4F6610004D919 /* MemoApplication.xcdatamodeld */; };
 		FF16556A23F502EF0004D919 /* MemoApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16556923F502EF0004D919 /* MemoApplicationTests.swift */; };
 		FF16557223F520560004D919 /* MemoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16557123F520560004D919 /* MemoDataService.swift */; };
-		FF16557623F529A40004D919 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16557523F529A40004D919 /* CustomCollectionCell.swift */; };
+		FF16557623F529A40004D919 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16557523F529A40004D919 /* ImageCollectionCell.swift */; };
+		FF359D3C23FD117200316360 /* MemoTitleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF359D3B23FD117200316360 /* MemoTitleField.swift */; };
+		FF359D3E23FD119400316360 /* MemoMainTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF359D3D23FD119400316360 /* MemoMainTextView.swift */; };
+		FF359D4023FD18C500316360 /* UserImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF359D3F23FD18C500316360 /* UserImageCollectionView.swift */; };
+		FF359D4323FD1FAB00316360 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF359D4223FD1FAB00316360 /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +54,16 @@
 		FF1654BC23F3BBD70004D919 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FF1654BE23F3C1400004D919 /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
 		FF1654C023F3C1D90004D919 /* MemoEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEditViewController.swift; sourceTree = "<group>"; };
-		FF1654C223F3C3A30004D919 /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
 		FF1654C623F4F6610004D919 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FF16556723F502EF0004D919 /* MemoApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF16556923F502EF0004D919 /* MemoApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoApplicationTests.swift; sourceTree = "<group>"; };
 		FF16556B23F502EF0004D919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF16557123F520560004D919 /* MemoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDataService.swift; sourceTree = "<group>"; };
-		FF16557523F529A40004D919 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
+		FF16557523F529A40004D919 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		FF359D3B23FD117200316360 /* MemoTitleField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTitleField.swift; sourceTree = "<group>"; };
+		FF359D3D23FD119400316360 /* MemoMainTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoMainTextView.swift; sourceTree = "<group>"; };
+		FF359D3F23FD18C500316360 /* UserImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageCollectionView.swift; sourceTree = "<group>"; };
+		FF359D4223FD1FAB00316360 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,12 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				FF1654C523F4F6610004D919 /* MemoApplication.xcdatamodeld */,
+				FF359D4123FD1F8E00316360 /* Models */,
 				FF16557423F5295B0004D919 /* Services */,
 				FF16549A23F3B5810004D919 /* AppDelegate.swift */,
 				FF16549E23F3B5810004D919 /* MemoListViewController.swift */,
 				FF1654BE23F3C1400004D919 /* MemoDetailViewController.swift */,
 				FF1654C023F3C1D90004D919 /* MemoEditViewController.swift */,
-				FF1654C223F3C3A30004D919 /* ImageCollectionView.swift */,
 				FF16557323F5293E0004D919 /* Views */,
 				FF1654A023F3B5810004D919 /* Main.storyboard */,
 				FF1654A323F3B5830004D919 /* Assets.xcassets */,
@@ -151,8 +157,11 @@
 		FF16557323F5293E0004D919 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF359D3F23FD18C500316360 /* UserImageCollectionView.swift */,
+				FF16557523F529A40004D919 /* ImageCollectionCell.swift */,
+				FF359D3B23FD117200316360 /* MemoTitleField.swift */,
+				FF359D3D23FD119400316360 /* MemoMainTextView.swift */,
 				FF1654BC23F3BBD70004D919 /* CustomTableViewCell.swift */,
-				FF16557523F529A40004D919 /* CustomCollectionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +172,14 @@
 				FF16557123F520560004D919 /* MemoDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FF359D4123FD1F8E00316360 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF359D4223FD1FAB00316360 /* MemoData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,12 +353,15 @@
 				FF1654C123F3C1D90004D919 /* MemoEditViewController.swift in Sources */,
 				FF16557223F520560004D919 /* MemoDataService.swift in Sources */,
 				FF1654BF23F3C1400004D919 /* MemoDetailViewController.swift in Sources */,
+				FF359D3C23FD117200316360 /* MemoTitleField.swift in Sources */,
 				FF16549F23F3B5810004D919 /* MemoListViewController.swift in Sources */,
+				FF359D4023FD18C500316360 /* UserImageCollectionView.swift in Sources */,
 				FF1654C723F4F6610004D919 /* MemoApplication.xcdatamodeld in Sources */,
-				FF1654C323F3C3A30004D919 /* ImageCollectionView.swift in Sources */,
+				FF359D4323FD1FAB00316360 /* MemoData.swift in Sources */,
+				FF359D3E23FD119400316360 /* MemoMainTextView.swift in Sources */,
 				FF16549B23F3B5810004D919 /* AppDelegate.swift in Sources */,
 				FF1654BD23F3BBD70004D919 /* CustomTableViewCell.swift in Sources */,
-				FF16557623F529A40004D919 /* CustomCollectionCell.swift in Sources */,
+				FF16557623F529A40004D919 /* ImageCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

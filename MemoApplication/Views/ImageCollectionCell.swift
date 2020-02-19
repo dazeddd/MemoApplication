@@ -10,7 +10,7 @@ import UIKit
 import Then
 
 
-class CustomCell: UICollectionViewCell {
+class ImageCollectionCell: UICollectionViewCell {
     
 //    var data: CustomData? {
 //        didSet {
