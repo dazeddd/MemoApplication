@@ -16,7 +16,7 @@ class CustomTableViewCell: UITableViewCell {
         
         self.contentView.addSubview(memoThumbnailView)
         self.contentView.addSubview(memoTitleLabel)
-        self.contentView.addSubview(memoMainTextPartLabel)
+        self.contentView.addSubview(memoMainTextPart)
         
         
     }
@@ -25,19 +25,30 @@ class CustomTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: UI
     
-    let memoThumbnailView = UIImageView()
+    let memoThumbnailView = UIImageView().then {
+        $0.image = UIImage(named:)
+    }
     
     let memoTitleLabel = UILabel()
     
-    let memoMainTextPartLabel = UILabel()
+    let memoMainTextPart = UILabel()
     
     
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
+        self.memoTitleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20)
+        self.memoTitleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20)
+        // 높이, 넓이
         
+        self.memoMainTextPart.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20)
+        self.memoMainTextPart.topAnchor.constraint(equalTo: memoTitleLabel.bottomAnchor, constant: 20)
+        self.memoMainTextPart.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 20)
+        
+        self.memoThumbnailView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 20)
         
     }
 

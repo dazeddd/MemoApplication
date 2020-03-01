@@ -7,10 +7,10 @@
     <entity name="Text" representedClassName="Text" syncable="YES" codeGenerationType="class">
         <attribute name="mainText" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="text" inverseEntity="Image"/>
+        <relationship name="image" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="text" inverseEntity="Image"/>
     </entity>
     <elements>
-        <element name="Text" positionX="-63" positionY="-18" width="128" height="88"/>
         <element name="Image" positionX="-54" positionY="18" width="128" height="73"/>
+        <element name="Text" positionX="-63" positionY="-18" width="128" height="88"/>
     </elements>
 </model>

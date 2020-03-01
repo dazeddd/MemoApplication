@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 
 class UserImageCollectionView: UIView {
 
@@ -17,6 +18,9 @@ class UserImageCollectionView: UIView {
         // Drawing code
     }
     */
+    
+    
+    
     
     lazy var imageCollectionView: UICollectionView = {
         

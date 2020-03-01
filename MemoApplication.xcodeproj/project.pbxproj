@@ -25,6 +25,7 @@
 		FF359D3E23FD119400316360 /* MemoMainTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF359D3D23FD119400316360 /* MemoMainTextView.swift */; };
 		FF359D4023FD18C500316360 /* UserImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF359D3F23FD18C500316360 /* UserImageCollectionView.swift */; };
 		FF359D4323FD1FAB00316360 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF359D4223FD1FAB00316360 /* MemoData.swift */; };
+		FF359D4723FD370E00316360 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF359D4623FD370E00316360 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		FF359D3D23FD119400316360 /* MemoMainTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoMainTextView.swift; sourceTree = "<group>"; };
 		FF359D3F23FD18C500316360 /* UserImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageCollectionView.swift; sourceTree = "<group>"; };
 		FF359D4223FD1FAB00316360 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		FF359D4623FD370E00316360 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				FF359D3B23FD117200316360 /* MemoTitleField.swift */,
 				FF359D3D23FD119400316360 /* MemoMainTextView.swift */,
 				FF1654BC23F3BBD70004D919 /* CustomTableViewCell.swift */,
+				FF359D4623FD370E00316360 /* CustomTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				FF1654A723F3B5830004D919 /* LaunchScreen.storyboard in Resources */,
 				FF1654A423F3B5830004D919 /* Assets.xcassets in Resources */,
+				FF359D4723FD370E00316360 /* CustomTableViewCell.xib in Resources */,
 				FF1654A223F3B5810004D919 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,15 +17,11 @@ class MemoEditViewController: UIViewController {
     
     // UI
     
-    
-    
-    let userImageCollectionView = UserImageCollectionView()
     let memoTitleField = MemoTitleField()
     let memoMainTextView = MemoMainTextView()
     
-    
+    let userImageCollectionView = UserImageCollectionView()
     let addPhotoButton = UIButton()
-    
     
     @objc func presentPhotoPicker() {
         
@@ -35,6 +31,8 @@ class MemoEditViewController: UIViewController {
         
         self.present(imagePicker, animated: true)
     }
+    
+//    let submitButton: UIBarButtonItem!
     
     
     // MARK: Init
@@ -52,6 +50,7 @@ class MemoEditViewController: UIViewController {
     // MARK: View Lifecycle
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         view.addSubview(userImageCollectionView)
@@ -84,6 +83,12 @@ extension MemoEditViewController: OpalImagePickerControllerDelegate {
     
     func imagePicker(_ picker: OpalImagePickerController, didFinishPickingAssets assets: [PHAsset]) {
         // save images, update UI
+        let service = MemoDataServie()
+        for asset in assets {
+            
+            service.saveImageEntity(entityName: "Image", value: asset, key: "image")
+            
+        }
         
         
         

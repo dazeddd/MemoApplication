@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 import UIKit
+import Photos
 
 protocol MemoDataServiceType {
     
@@ -65,6 +66,29 @@ class MemoDataServie: MemoDataServiceType {
     
     // 키 값 쌍을 set 하고 저장
     func saveEntity(entityName: String, value: String, key: String) -> Bool {
+        guard let managedContext = managedContext else {
+            return false
+        }
+        
+        guard let targetEntity = NSEntityDescription.entity(forEntityName: entityName, in: managedContext) else {
+            return false
+        }
+        
+        let target = NSManagedObject(entity: targetEntity, insertInto: managedContext)
+        target.setValue(value, forKey: key)
+        
+        do {
+            try managedContext.save()
+            return true
+        } catch let error as NSError {
+            print("error: \(error)")
+        }
+        
+        return false
+    }
+    
+    
+    func saveImageEntity(entityName: String, value: PHAsset, key: String) -> Bool {
         guard let managedContext = managedContext else {
             return false
         }

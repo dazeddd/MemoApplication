@@ -9,6 +9,15 @@
 import UIKit
 
 class MemoListViewController: UIViewController {
+
+    
+    // MARK: UI
+    
+    let memoListTableView: UITableView = UITableView()
+    
+    
+
+    // Initialize
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -19,13 +28,7 @@ class MemoListViewController: UIViewController {
     }
     
     
-    
-    let memoListTableView: UITableView = UITableView()
-    
-    // 네비게이션 바에 추가
-    let addPhotoButton: UIBarButtonItem
-
-    
+    // View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
